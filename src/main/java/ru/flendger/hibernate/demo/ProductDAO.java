@@ -45,8 +45,7 @@ public class ProductDAO {
     }
 
     public Product findById(Long id) {
-        Product product = session.get(Product.class, id);
-        return product;
+        return session.get(Product.class, id);
     }
 
     public List<Product> findAll() {
